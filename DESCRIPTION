@@ -1,0 +1,13 @@
+Package: strattools
+Title: Plot Stratigraphic Columns In R
+Version: 0.0.0.9000
+Authors@R: 
+    person("William D.", "Arnuk", , "warnuk1@binghamton.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-4133-8935"))
+Description: This package provides tools for plotting simple stratigraphic 
+              columns using either base R graphics or ggplot2.
+License: `use_gpl3_license()`
+Encoding: UTF-8
+Imports: ggplot2
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
