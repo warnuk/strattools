@@ -6,8 +6,9 @@ Authors@R:
            comment = c(ORCID = "0000-0002-4133-8935"))
 Description: This package provides tools for plotting simple stratigraphic 
               columns using either base R graphics or ggplot2.
-License: `use_gpl3_license()`
 Encoding: UTF-8
-Imports: ggplot2
+Imports: 
+    ggplot2 (>= 3.4.2)
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
+License: GPL (>= 3)

@@ -20,6 +20,6 @@ A data.frame object with thicknesses in the first column, lithology/unit values 
 Convert depths to unit thicknesses
 }
 \examples{
-depths2thicknesses(c(1, 2, 3, 4, 5), c(1, 1, 2, 2, 1), F)
-depths2thicknesses(c(1010, 1020, 1030, 1040, 1050), c(1, 1, 2, 2, 1), F)
+depths2thicknesses(c(1, 2, 3, 4, 5), c(1, 1, 2, 2, 1))
+depths2thicknesses(c(1010, 1020, 1030, 1040, 1050), c(1, 1, 2, 2, 1))
 }

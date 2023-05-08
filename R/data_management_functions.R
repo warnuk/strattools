@@ -5,8 +5,8 @@
 #' @param decreasing A boolean dictating whether to sort depths increasing or decreasing
 #' @return A data.frame object with thicknesses in the first column, lithology/unit values in the second column.
 #' @examples
-#' depths2thicknesses(c(1, 2, 3, 4, 5), c(1, 1, 2, 2, 1), F)
-#' depths2thicknesses(c(1010, 1020, 1030, 1040, 1050), c(1, 1, 2, 2, 1), F)
+#' depths2thicknesses(c(1, 2, 3, 4, 5), c(1, 1, 2, 2, 1))
+#' depths2thicknesses(c(1010, 1020, 1030, 1040, 1050), c(1, 1, 2, 2, 1))
 #' @export
 depths2thicknesses <- function(depths, values, decreasing=F) {
   # sort by depths (increasing unless decreasing==T)

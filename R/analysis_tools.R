@@ -5,7 +5,7 @@
 #' @param threshold An optional value to be used as a cut-off for peaks.
 #' @return A data.frame object with peak locations (x) and peak values (y).
 #' @examples
-#' x <- seq(0, 2*pi, 1000)
+#' x <- seq(0, 2*pi, length=1000)
 #' y <- sin(2*x)
 #' find_peaks(y, x)
 #' @export
@@ -26,7 +26,7 @@ find_peaks <- function(y, x=seq(1,length(y)), threshold=NULL) {
 #' @param threshold An optional value to be used as a cut-off for troughs.
 #' @return A data.frame object with trough locations (x) and troughs value (y).
 #' @examples
-#' x <- seq(0, 2*pi, 1000)
+#' x <- seq(0, 2*pi, length=1000)
 #' y <- sin(2*x)
 #' find_troughs(y, x)
 #' @export

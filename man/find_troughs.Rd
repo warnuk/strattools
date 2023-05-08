@@ -20,7 +20,7 @@ A data.frame object with trough locations (x) and troughs value (y).
 Locate troughs
 }
 \examples{
-x <- seq(0, 2*pi, 1000)
+x <- seq(0, 2*pi, length=1000)
 y <- sin(2*x)
 find_troughs(y, x)
 }

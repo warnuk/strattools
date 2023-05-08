@@ -20,7 +20,7 @@ A data.frame object with peak locations (x) and peak values (y).
 Locate peaks
 }
 \examples{
-x <- seq(0, 2*pi, 1000)
+x <- seq(0, 2*pi, length=1000)
 y <- sin(2*x)
 find_peaks(y, x)
 }
