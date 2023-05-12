@@ -1,3 +1,21 @@
+#' Meshgrid
+#' @description returns 2D grid coordinates from input x and y vectors.
+#' @param x Input vector of x-coordinates.
+#' @param y Input vector of y-coordinates.
+#' @return A list of length 2 with a matrix (X) of x-coordinates and a matrix
+#' (Y) of y-coordinates. Each row of X is a copy of input 'x'; each column of Y
+#' is a copy of input 'y'.
+#' @examples
+#' x <- 1:10
+#' y <- 1:10
+#' meshgrid(y, x)
+#' @export
+meshgrid <- function(x, y) {
+  X <- matrix(rep(x, length(y)), nrow=length(y), byrow=TRUE)
+  Y <- matrix(rep(y, length(x)), ncol=length(x), byrow=FALSE)
+  return(list(X=X, Y=Y))
+}
+
 #' Locate peaks
 #'
 #' @param y Input vector of data in which to find peaks.
