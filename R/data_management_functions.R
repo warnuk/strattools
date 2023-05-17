@@ -1,5 +1,4 @@
 #' Convert depths to unit thicknesses
-#'
 #' @param depths A vector of depth points, the same length as 'values'.
 #' @param values A vector of lithology/unit values, the same length as 'depths'.
 #' @param decreasing A boolean dictating whether to sort depths increasing or decreasing
@@ -27,7 +26,6 @@ depths2thicknesses <- function(depths, values, decreasing=F) {
 }
 
 #' Convert unit thicknesses to depths
-#'
 #' @param thicknesses A vector of unit thicknesses, the same length as 'values'.
 #' @param values A vector of lithology/unit values, the same length as 'thicknesses'.
 #' @param start A starting depth to which thicknesses will be added to produce depths
@@ -40,4 +38,34 @@ thicknesses2depths <- function(thicknesses, values, start=0) {
   depths <- append(cumsum(thicknesses)+start, start, 0)
   values <- append(values, values[length(values)])
   return(data.frame(depths=depths, values=values))
+}
+
+#' deg2rad
+#' @description Convert angular measurements from degrees to radians
+#' @param degrees A numeric measurement in degrees
+#' @return A numeric measurement in radians
+#' @examples
+#' deg2rad(30)
+#' deg2rad(180)
+#' deg2rad(360)
+#' deg2rad(720)
+#' @export
+deg2rad <- function(degrees) {
+  radians <- degrees * pi / 180
+  return(radians)
+}
+
+#' rad2deg
+#' @description Convert angular measurements from radians to degrees
+#' @param radians A numeric measurement in radians
+#' @return A numeric measurement in degrees
+#' @examples
+#' deg2rad(pi/2)
+#' deg2rad(pi)
+#' deg2rad(2*pi)
+#' deg2rad(6*pi)
+#' @export
+rad2deg <- function(radians) {
+  degrees <- radians * 180 / pi
+  return(degrees)
 }
