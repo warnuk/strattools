@@ -17,7 +17,6 @@ meshgrid <- function(x, y) {
 }
 
 #' Locate peaks
-#'
 #' @param y Input vector of data in which to find peaks.
 #' @param x (optional) locations of data observations.
 #' @param threshold An optional value to be used as a cut-off for peaks.
@@ -38,7 +37,6 @@ find_peaks <- function(y, x=seq(1,length(y)), threshold=NULL) {
 }
 
 #' Locate troughs
-#'
 #' @param y Input vector of data in which to find troughs.
 #' @param x (optional) locations of data observations.
 #' @param threshold An optional value to be used as a cut-off for troughs.
